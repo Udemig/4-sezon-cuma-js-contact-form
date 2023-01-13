@@ -6,124 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>List Forms</title>
     <link rel="stylesheet" href="../css/listForms.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
   <body>
     <h1 class="pageTitle">Veri Tabanındaki Formlar</h1>
-    <div class="formContainer">
-      <div class="formLeft">
-        <div id="firstRow" class="formRow">
-          <span class="formLabel"
-            >Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span
-          >
-          <span>Emre</span>
+    <div id="yetkisiz">
+      <form id="loginForm">
+        <div class="loginFormRow">
+          <label for="usernameInput">Kullanıcı Adı</label>
+          <input type="text" id="usernameInput" />
         </div>
-        <div class="formRow">
-          <span class="formLabel">Soyadı&nbsp;:</span>
-          <span>Harman</span>
+        <div class="loginFormRow">
+          <label for="passwordInput">Şifre</label>
+          <input type="password" id="passwordInput" />
         </div>
-        <div class="formRow">
-          <span class="formLabel">Email&nbsp;&nbsp;&nbsp;:</span>
-          <span><a href="mailto:emrehrmn@gmail.com">emrehrmn@gmail.com</a></span>
+        <div class="loginFormBtnContainer">
+          <button type="submit">Giriş Yap</button>
         </div>
-      </div>
-      <div class="formRight">
-        <div>
-          <span class="formLabel">Mesaj :</span>
-        </div>
-        <p class="formMessage">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, optio
-          atque laborum a deserunt voluptatum excepturi fugit sequi laudantium
-          sit veniam quisquam eaque impedit error inventore totam nobis. Saepe,
-          nostrum.
-        </p>
+      </form>
+      <p id="loginError"></p>
+    </div>
+    <div id="yetkili">
+      <div id="toTopBtn" class="toTop">
+        <i class="fa-solid fa-arrow-up"></i>
       </div>
     </div>
-    <div class="formContainer">
-        <div class="formLeft">
-          <div id="firstRow" class="formRow">
-            <span class="formLabel"
-              >Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span
-            >
-            <span>Emre</span>
-          </div>
-          <div class="formRow">
-            <span class="formLabel">Soyadı&nbsp;:</span>
-            <span>Harman</span>
-          </div>
-          <div class="formRow">
-            <span class="formLabel">Email&nbsp;&nbsp;&nbsp;:</span>
-            <span><a href="mailto:emrehrmn@gmail.com">emrehrmn@gmail.com</a></span>
-          </div>
-        </div>
-        <div class="formRight">
-          <div>
-            <span class="formLabel">Mesaj :</span>
-          </div>
-          <p class="formMessage">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, optio
-            atque laborum a deserunt voluptatum excepturi fugit sequi laudantium
-            sit veniam quisquam eaque impedit error inventore totam nobis. Saepe,
-            nostrum.
-          </p>
-        </div>
-      </div>
-      <div class="formContainer">
-        <div class="formLeft">
-          <div id="firstRow" class="formRow">
-            <span class="formLabel"
-              >Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span
-            >
-            <span>Emre</span>
-          </div>
-          <div class="formRow">
-            <span class="formLabel">Soyadı&nbsp;:</span>
-            <span>Harman</span>
-          </div>
-          <div class="formRow">
-            <span class="formLabel">Email&nbsp;&nbsp;&nbsp;:</span>
-            <span><a href="mailto:emrehrmn@gmail.com">emrehrmn@gmail.com</a></span>
-          </div>
-        </div>
-        <div class="formRight">
-          <div>
-            <span class="formLabel">Mesaj :</span>
-          </div>
-          <p class="formMessage">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, optio
-            atque laborum a deserunt voluptatum excepturi fugit sequi laudantium
-            sit veniam quisquam eaque impedit error inventore totam nobis. Saepe,
-            nostrum.
-          </p>
-        </div>
-      </div>
-      <div class="formContainer">
-        <div class="formLeft">
-          <div id="firstRow" class="formRow">
-            <span class="formLabel"
-              >Adı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span
-            >
-            <span>Emre</span>
-          </div>
-          <div class="formRow">
-            <span class="formLabel">Soyadı&nbsp;:</span>
-            <span>Harman</span>
-          </div>
-          <div class="formRow">
-            <span class="formLabel">Email&nbsp;&nbsp;&nbsp;:</span>
-            <span><a href="mailto:emrehrmn@gmail.com">emrehrmn@gmail.com</a></span>
-          </div>
-        </div>
-        <div class="formRight">
-          <div>
-            <span class="formLabel">Mesaj :</span>
-          </div>
-          <p class="formMessage">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, optio
-            atque laborum a deserunt voluptatum excepturi fugit sequi laudantium
-            sit veniam quisquam eaque impedit error inventore totam nobis. Saepe,
-            nostrum.
-          </p>
-        </div>
-      </div>
+
+    <script src="../js/listForms.js"></script>
   </body>
 </html>
